@@ -1742,89 +1742,8 @@ function copyUpiId(upiId) {
 </script>
 
 
-            <div class="p-4 bg-slate-950 rounded-xl border border-indigo-500/30 flex items-center justify-between">
-                <div>
-                    <div class="font-bold text-white">Tokio Sub-Millisecond Failover Test</div>
-                    <div class="text-[11px] text-slate-400">Instantly drops Wi-Fi link to prove packet survivability.</div>
-                </div>
-                <button onclick="testSimFailover()" class="px-3.5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg">
-                    ⚡ Trigger 0.4ms Failover
-                </button>
-            </div>
-            <div id="sim-failover-status" class="hidden text-emerald-400 text-xs font-bold p-2 bg-emerald-500/10 rounded-lg border border-emerald-500/30 text-center">
-                ✓ Failover successful in 0.38ms: 0 dropped packets. Voice call / game stream uninterrupted.
-            </div>
-        </div>
-
-        <!-- SIM VIEW 3: TagMaster Barcode Studio -->
-        <div id="sim-view-tagmaster" class="hidden space-y-4 font-mono text-xs">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="space-y-2">
-                    <div>
-                        <label class="text-[10px] text-slate-400 block mb-1">Product Name:</label>
-                        <input type="text" id="sim-tag-name" value="Nike Air Max 270" oninput="updateSimTag()" class="w-full bg-slate-950 border border-slate-700 text-white p-2 rounded-lg" />
-                    </div>
-                    <div>
-                        <label class="text-[10px] text-slate-400 block mb-1">MRP Price (&#8377;):</label>
-                        <input type="text" id="sim-tag-price" value="4,999" oninput="updateSimTag()" class="w-full bg-slate-950 border border-slate-700 text-white p-2 rounded-lg" />
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-center">
-                    <div class="w-56 bg-white text-slate-900 border-2 border-slate-900 rounded-lg p-3 text-center shadow-lg">
-                        <div class="text-[9px] font-bold tracking-wider uppercase text-slate-600">REHAN QUANT LAB RETAIL</div>
-                        <div id="sim-tag-preview-name" class="font-bold text-xs mt-1 truncate">Nike Air Max 270</div>
-                        <div id="sim-tag-preview-price" class="text-sm font-extrabold text-blue-600 my-1">MRP: &#8377;4,999</div>
-                        <div class="font-mono text-sm tracking-widest bg-slate-100 p-1 rounded font-bold">||| | |||| | ||||| |</div>
-                        <div class="text-[9px] text-slate-500 font-mono mt-0.5">8901030928421</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
 
 <script>
-);
-}
-function addSimPosItem() {
-    const extra = document.getElementById('sim-pos-extra-item');
-    const gst = document.getElementById('sim-pos-gst');
-    const total = document.getElementById('sim-pos-total');
-    const btn = document.getElementById('sim-pos-add-btn');
-    if (extra && gst && total && btn) {
-        extra.classList.remove('hidden');
-        gst.textContent = '₹941';
-        total.textContent = '₹8,788';
-        btn.disabled = true;
-        btn.textContent = '✓ Shoe Item Added';
-    }
-}
-function printSimReceipt() {
-    alert("🖨️ ExpressBill POS Thermal Receipt Generated! 3-inch thermal printer spool triggered with dynamic UPI QR code.");
-    if (typeof confetti === 'function') {
-        confetti({ particleCount: 35, spread: 60 });
-    }
-}
-function testSimFailover() {
-    const status = document.getElementById('sim-failover-status');
-    if (status) {
-        status.classList.remove('hidden');
-        if (typeof confetti === 'function') {
-            confetti({ particleCount: 25, spread: 50 });
-        }
-    }
-}
-function updateSimTag() {
-    const nameInput = document.getElementById('sim-tag-name');
-    const priceInput = document.getElementById('sim-tag-price');
-    const namePrev = document.getElementById('sim-tag-preview-name');
-    const pricePrev = document.getElementById('sim-tag-preview-price');
-    if (nameInput && namePrev) namePrev.textContent = nameInput.value;
-    if (priceInput && pricePrev) pricePrev.textContent = 'MRP: ₹' + priceInput.value;
-}
-
 // Category Project Filter Handler
 function filterProjects(category, triggerEl) {
     const normCat = (category || 'all').toLowerCase();
