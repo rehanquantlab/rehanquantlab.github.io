@@ -156,8 +156,6 @@ img, svg, video, canvas, audio, iframe, embed, object {
 }
 </script>
 <script src="phoenix_sentinel.js"></script>
-<script src="aria_neural_engine.js"></script>
-
 <!-- Rust WASM Engine, Three.js, GSAP & Confetti -->
 <script src="rql_wasm.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -176,6 +174,7 @@ img, svg, video, canvas, audio, iframe, embed, object {
     <link rel="preconnect" href="https://quantify17.gumroad.com" crossorigin>
     <link rel="dns-prefetch" href="https://quantify17.gumroad.com">
     <link rel="preconnect" href="https://assets.gumroad.com" crossorigin>
+  <script src="rql_seo_engine.js" defer></script>
 </head>
 <body class="bg-slateCanvas text-slate-800 antialiased selection:bg-slate-900 selection:text-white flex flex-col min-h-screen">
 <!-- Single Unified Institutional Status & Rotating Announcement Bar (Gumroad Live Banner) -->
@@ -1339,60 +1338,6 @@ Resume (PDF)
 <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white"></span>
 <i class="w-7 h-7" data-lucide="message-circle"></i>
 </a>
-</div>
-<!-- FUTURISTIC HOLOGRAPHIC AI COMPANION (ARIA v4.0) (Bottom Left) -->
-<div class="fixed bottom-6 left-6 z-50">
-<!-- Floating Capsule Trigger Button -->
-<button class="relative group flex items-center gap-2.5 bg-slate-900 hover:bg-slate-800 text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl border border-cyan-500/40 transition transform hover:scale-105" id="aria-trigger" onclick="toggleAriaChat()">
-<span class="absolute -top-1 -left-1 w-3.5 h-3.5 bg-cyan-400 rounded-full animate-ping"></span>
-<div class="w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-[10px] font-bold text-white shadow-inner">
-
-                AI
-
-            </div>
-<span class="text-xs font-semibold tracking-wide hidden sm:inline">Aria v4.0 // AI Assistant</span>
-</button>
-<!-- Expandable Holographic HUD Chat Terminal Window -->
-<div class="hidden absolute bottom-16 left-0 w-[90vw] sm:w-[390px] h-[520px] dark-glass rounded-3xl border border-cyan-500/30 shadow-2xl flex flex-col overflow-hidden text-slate-100 z-50" id="aria-terminal">
-<!-- Terminal Header -->
-<div class="px-4 py-3 bg-slate-900 border-b border-cyan-500/20 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-<span class="text-xs font-mono font-bold tracking-wider text-cyan-300">ARIA // AUTONOMOUS SYSTEMS ASSISTANT v4.0</span>
-</div>
-<div class="flex items-center gap-2">
-<button class="text-slate-400 hover:text-white text-xs p-1" id="aria-sound-btn" onclick="toggleAriaSound()" title="Toggle Sound">🔊</button>
-<button class="text-slate-400 hover:text-white p-1 text-sm font-bold" onclick="toggleAriaChat()">✕</button>
-</div>
-</div>
-<!-- Message Stream -->
-<div class="flex-grow p-4 overflow-y-auto space-y-3 text-xs font-sans" id="aria-messages">
-<!-- Welcome Message -->
-<div class="flex items-start gap-2.5">
-<div class="w-6 h-6 rounded-full bg-cyan-600 flex items-center justify-center shrink-0 text-[10px] font-bold text-white">AI</div>
-<div class="bg-slate-800/90 border border-slate-700/80 p-3 rounded-2xl rounded-tl-none space-y-2 text-slate-200 leading-relaxed">
-<p>Greetings! I am <strong>Aria v4.0</strong>, Mohammad Rehan's neural intelligence companion. I have full knowledge of his BCA education, his retail leadership at Ladies Zone Patna since 2021, and his software projects.</p>
-<p>How may I assist you today?</p>
-</div>
-</div>
-</div>
-<!-- Quick Action Chips -->
-<div class="px-3 py-2 bg-slate-900/70 border-t border-slate-800 flex gap-1.5 overflow-x-auto no-scrollbar whitespace-nowrap">
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('Hi, who is Mohammad Rehan?')">👋 Who is Rehan?</button>
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('What we do and how do you do it?')">⚡ What &amp; How</button>
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('How does this website work?')">🌐 How Site Works</button>
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('Tell me about Project Phoenix and Ash Ledger')">🛡️ Phoenix &amp; WAL</button>
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('How can I download the official resume?')">📄 Resume PDF</button>
-<button class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-[11px] px-2.5 py-1 rounded-lg border border-cyan-500/20 transition" onclick="sendAriaPreset('How can I contact or hire Mohammad Rehan?')">📲 WhatsApp</button>
-</div>
-<!-- Chat Input Bar -->
-<div class="p-3 bg-slate-900 border-t border-slate-800 flex items-center gap-2">
-<input class="flex-grow bg-slate-800 border border-slate-700 text-slate-200 text-xs px-3 py-2.5 rounded-xl focus:outline-none focus:border-cyan-500" id="aria-input" onkeydown="if(event.key==='Enter') sendAriaMessage()" placeholder="Ask Aria anything about Rehan..." type="text"/>
-<button class="bg-cyan-600 hover:bg-cyan-500 text-white p-2.5 rounded-xl transition flex items-center justify-center" onclick="sendAriaMessage()">
-<i class="w-3.5 h-3.5" data-lucide="send"></i>
-</button>
-</div>
-</div>
 </div>
 <!-- CORE SCRIPT LOGIC -->
 <script>
