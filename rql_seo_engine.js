@@ -84,7 +84,7 @@
             "caption": SITE_NAME
           },
           "image": EMBLEM_URL,
-          "description": "Independent computational software laboratory specializing in air-gapped retail POS suites, automated GST & ledger reconcilers, and high-throughput quantitative trading infrastructure.",
+          "description": "Commercial desktop software laboratory: Developer of ExpressBill POS, StoreFlow POS, and air-gapped retail suites with zero monthly subscription fees, automated GST & ledger reconcilers, and high-throughput quantitative trading infrastructure.",
           "founder": {
             "@type": "Person",
             "@id": `${SITE_URL}/#founder`,
