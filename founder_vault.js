@@ -1,8 +1,10 @@
 /**
  * ===============================================================================
- * 👑 REHAN QUANT LAB™ — INVISIBLE FOUNDER SOVEREIGN PORTAL (MOBILE & DESKTOP)
- * All 19 Sovereign Products + Universal Master Suite + Full License Tiers
- * Secret Trigger 1: Tap "Available for High-Impact Roles" badge (or Logo) 5 times!
+ * 👑 REHAN QUANT LAB™ — INVISIBLE FOUNDER SOVEREIGN PORTAL v2.5 (MOBILE & DESKTOP)
+ * All 19 Sovereign Products + Universal Master Suite
+ * 4 Gumroad Version Tiers (Solo, 5-Seat Firm, Enterprise Fleet, CA Audit/VIP)
+ * Lifetime Perpetual vs 1-Year Renewal (Yearly Renewal / Upgrade)
+ * Secret Trigger 1: Tap "Available for High-Impact Roles" badge 5 times!
  * Secret Trigger 2: Visit rehanquantlab.com/#founder (Instant access on mobile)
  * Secret Trigger 3: Press Ctrl + Shift + F on keyboard
  * ===============================================================================
@@ -10,7 +12,7 @@
 
 (function () {
   const OFFLINE_MASTER_SALT = "RQL_QUANT_LAB_MASTER_KEY_2026_EXPRESSBILL_OFFLINE_PERPETUAL";
-  const FOUNDER_PIN_HASH = "ca980486c99f9c735d487cb1a48c4a0362c3f8e658ecfdf3c67c51ddb4ab7e29"; // Default SHA-256 for 709151
+  const FOUNDER_PIN_HASH = "ca980486c99f9c735d487cb1a48c4a0362c3f8e658ecfdf3c67c51ddb4ab7e29"; // SHA-256 for 709151
   const MASTER_KEY = "RQL-FOUNDER-MASTER-2026-SOVEREIGN";
 
   let tapCount = 0;
@@ -38,14 +40,14 @@
     if (document.getElementById("rql-founder-modal")) return;
 
     const modalHtml = `
-    <div id="rql-founder-modal" style="display:none; position:fixed; inset:0; z-index:9999999; background:rgba(2,6,23,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); font-family:system-ui, -apple-system, sans-serif; align-items:center; justify-content:center; padding:16px;">
-      <div style="background:#0F172A; border:1px solid #10B981; border-radius:20px; max-width:520px; width:100%; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(16,185,129,0.3); overflow:hidden; color:#F8FAFC;">
+    <div id="rql-founder-modal" style="display:none; position:fixed; inset:0; z-index:9999999; background:rgba(2,6,23,0.92); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; align-items:center; justify-content:center; padding:16px;">
+      <div style="background:#0F172A; border:1px solid #10B981; border-radius:20px; max-width:540px; width:100%; max-height:92vh; display:flex; flex-direction:column; box-shadow:0 25px 50px -12px rgba(16,185,129,0.3); overflow:hidden; color:#F8FAFC;">
         
         <!-- Header -->
         <div style="background:#1E293B; padding:16px 20px; border-bottom:1px solid #334155; display:flex; align-items:center; justify-content:space-between; shrink:0;">
           <div style="display:flex; align-items:center; gap:10px;">
             <div style="width:10px; height:10px; border-radius:50%; background:#10B981; box-shadow:0 0 10px #10B981;"></div>
-            <span style="font-weight:800; font-size:13px; letter-spacing:1px; color:#10B981;">FOUNDER SOVEREIGN VAULT v2.0</span>
+            <span style="font-weight:800; font-size:13px; letter-spacing:1px; color:#10B981;">FOUNDER SOVEREIGN VAULT v2.5</span>
           </div>
           <button id="rql-founder-close" style="background:transparent; border:none; color:#94A3B8; font-size:22px; cursor:pointer; padding:4px 8px;">✕</button>
         </div>
@@ -74,41 +76,62 @@
             <button id="rql-copy-master-btn" style="background:#1E293B; border:1px solid #10B981; color:#10B981; border-radius:8px; padding:6px 12px; font-size:11px; font-weight:bold; cursor:pointer; shrink:0; white-space:nowrap;">Copy Master</button>
           </div>
 
-          <!-- Product Selector (Full 19 Products) -->
+          <!-- Product Selector (Full 19 Products + Universal Suite) -->
           <div style="margin-bottom:12px;">
-            <label style="display:block; font-size:11px; font-weight:700; color:#10B981; margin-bottom:4px; text-transform:uppercase;">Select Target Commercial Product (All 19 Products)</label>
-            <select id="rql-select-prod" style="width:100%; padding:9px 12px; border-radius:10px; background:#1E293B; border:1px solid #334155; color:#FFFFFF; font-size:12px; box-sizing:border-box; outline:none;">
-              <option value="👑 Universal Sovereign Master Access (All 19 Products)">👑 Universal Sovereign Master Access (All 19 Products)</option>
-              <option value="01 • RQL Conduit™ — Multi-Interface Network Gateway v2.0">01 • RQL Conduit™ — Network Gateway</option>
-              <option value="02 • RQL Deterministic State Kernel™ v2.0">02 • RQL Deterministic State Kernel™</option>
-              <option value="03 • RQL Aegis™ — Sovereign Risk Engine v2.0">03 • RQL Aegis™ — Sovereign Risk Engine</option>
-              <option value="04 • RQL Veritas Dossier™ — Governance & Capital Auditor v2.0">04 • RQL Veritas Dossier™ — Capital Auditor</option>
-              <option value="05 • RQL Industrial Sentinel™ — Telemetry Engine v2.0">05 • RQL Industrial Sentinel™ — Telemetry Engine</option>
-              <option value="06 • RQL ExpressBill POS™ — Retail Billing Suite v2.0">06 • RQL ExpressBill POS™ — Retail Suite</option>
-              <option value="07 • RQL Sovereign Suite Master™ — Enterprise Fleet v2.0">07 • RQL Sovereign Suite Master™ — Enterprise Fleet</option>
-              <option value="08 • RQL TagMaster™ — Thermal Barcode & Label Printer v1.0">08 • RQL TagMaster™ — Barcode & Label</option>
-              <option value="09 • RQL DeskBroadcast™ — WhatsApp Direct Marketing Workstation v1.0">09 • RQL DeskBroadcast™ — WhatsApp Marketing</option>
-              <option value="10 • RQL TaxMatrix™ — CA Reconciler (GST 2B vs Books) v1.0">10 • RQL TaxMatrix™ — CA GST Reconciler</option>
-              <option value="11 • RQL LocalMesh™ — Multi-Counter Sync (Air-Gapped CRDT) v1.0">11 • RQL LocalMesh™ — Counter Sync</option>
-              <option value="12 • RQL Sovereign Flagship Studio Enterprise v2.0">12 • RQL Flagship Studio Enterprise™</option>
-              <option value="13 • RQL StoreFlow™ — Unified Retail Workstation v1.0">13 • RQL StoreFlow™ — Retail POS Workstation</option>
-              <option value="14 • RQL LedgerGuard™ — CA Financial Reconciler v1.0">14 • RQL LedgerGuard™ — CA Financial Reconciler</option>
-              <option value="15 • RQL StockAudit™ — Physical Inventory Gun Scanner v1.0">15 • RQL StockAudit™ — Inventory Gun Scanner</option>
-              <option value="16 • RQL OmniDispatch™ — 24/7 WhatsApp Closer Workstation v1.0">16 • RQL OmniDispatch™ — WhatsApp Closer</option>
-              <option value="17 • RQL Nexus™ — Multi-Branch P2P Sync & Fleet Workstation v1.0">17 • RQL Nexus™ — Multi-Branch Sync</option>
-              <option value="18 • RQL DocumentShield™ — Forensic PDF Redactor & Metadata Purge OS v1.0">18 • RQL DocumentShield™ — Forensic PDF Redactor</option>
-              <option value="19 • RQL WhisperVault™ — Air-Gapped AI Voice Intelligence OS v1.0">19 • RQL WhisperVault™ — AI Voice OS</option>
+            <label style="display:block; font-size:11px; font-weight:700; color:#10B981; margin-bottom:4px; text-transform:uppercase;">Select Target Commercial Product (Scrollable 20 Options)</label>
+            <select id="rql-select-prod" style="width:100%; padding:9px 12px; border-radius:10px; background:#1E293B; border:1px solid #334155; color:#FFFFFF; font-size:12px; box-sizing:border-box; outline:none; max-height:220px;">
+              <optgroup label="👑 MASTER SUITE (ALL PRODUCTS ACCESS)">
+                <option value="👑 Universal Sovereign Master Access (All 19 Products)">👑 Universal Sovereign Master Access (All 19 Products)</option>
+              </optgroup>
+              <optgroup label="⚡ BARE-METAL QUANT ENGINES (01 - 05)">
+                <option value="01 • RQL Conduit™ — Multi-Interface Network Gateway v2.0">01 • RQL Conduit™ — Network Gateway</option>
+                <option value="02 • RQL Deterministic State Kernel™ v2.0">02 • RQL Deterministic State Kernel™</option>
+                <option value="03 • RQL Aegis™ — Sovereign Risk Engine v2.0">03 • RQL Aegis™ — Sovereign Risk Engine</option>
+                <option value="04 • RQL Veritas Dossier™ — Governance & Capital Auditor v2.0">04 • RQL Veritas Dossier™ — Capital Auditor</option>
+                <option value="05 • RQL Industrial Sentinel™ — Telemetry Engine v2.0">05 • RQL Industrial Sentinel™ — Telemetry Engine</option>
+              </optgroup>
+              <optgroup label="🏪 RETAIL POS & HARDWARE FLEET (06 - 09, 11 - 13)">
+                <option value="06 • RQL ExpressBill POS™ — Retail Billing Suite v2.0">06 • RQL ExpressBill POS™ — Retail Suite</option>
+                <option value="07 • RQL Sovereign Suite Master™ — Enterprise Fleet v2.0">07 • RQL Sovereign Suite Master™ — Enterprise Fleet</option>
+                <option value="08 • RQL TagMaster™ — Thermal Barcode & Label Printer v1.0">08 • RQL TagMaster™ — Barcode & Label</option>
+                <option value="09 • RQL DeskBroadcast™ — WhatsApp Direct Marketing Workstation v1.0">09 • RQL DeskBroadcast™ — WhatsApp Marketing</option>
+                <option value="11 • RQL LocalMesh™ — Multi-Counter Sync (Air-Gapped CRDT) v1.0">11 • RQL LocalMesh™ — Counter Sync</option>
+                <option value="12 • RQL Sovereign Flagship Studio Enterprise v2.0">12 • RQL Flagship Studio Enterprise™</option>
+                <option value="13 • RQL StoreFlow™ — Unified Retail Workstation v1.0">13 • RQL StoreFlow™ — Retail POS Workstation</option>
+              </optgroup>
+              <optgroup label="📊 CA & FINANCIAL RECONCILERS (10, 14, 15)">
+                <option value="10 • RQL TaxMatrix™ — CA Reconciler (GST 2B vs Books) v1.0">10 • RQL TaxMatrix™ — CA GST Reconciler</option>
+                <option value="14 • RQL LedgerGuard™ — CA Financial Reconciler v1.0">14 • RQL LedgerGuard™ — CA Financial Reconciler</option>
+                <option value="15 • RQL StockAudit™ — Physical Inventory Gun Scanner v1.0">15 • RQL StockAudit™ — Inventory Gun Scanner</option>
+              </optgroup>
+              <optgroup label="🤖 AUTONOMOUS AGENT WORKSTATIONS (16, 17)">
+                <option value="16 • RQL OmniDispatch™ — 24/7 WhatsApp Closer Workstation v1.0">16 • RQL OmniDispatch™ — WhatsApp Closer</option>
+                <option value="17 • RQL Nexus™ — Multi-Branch P2P Sync & Fleet Workstation v1.0">17 • RQL Nexus™ — Multi-Branch Sync</option>
+              </optgroup>
+              <optgroup label="🛡️ FORENSIC REDACTION & AI VOICE OS (18, 19)">
+                <option value="18 • RQL DocumentShield™ — Forensic PDF Redactor & Metadata Purge OS v1.0">18 • RQL DocumentShield™ — Forensic PDF Redactor</option>
+                <option value="19 • RQL WhisperVault™ — Air-Gapped AI Voice Intelligence OS v1.0">19 • RQL WhisperVault™ — AI Voice OS</option>
+              </optgroup>
             </select>
           </div>
 
-          <!-- Validity Tier Selector -->
+          <!-- Row: 4 Gumroad Version Tiers -->
           <div style="margin-bottom:12px;">
-            <label style="display:block; font-size:11px; font-weight:700; color:#38BDF8; margin-bottom:4px; text-transform:uppercase;">License Validity Tier</label>
+            <label style="display:block; font-size:11px; font-weight:700; color:#38BDF8; margin-bottom:4px; text-transform:uppercase;">🏷️ Commercial Version Tier (Gumroad Edition)</label>
             <select id="rql-select-tier" style="width:100%; padding:9px 12px; border-radius:10px; background:#1E293B; border:1px solid #334155; color:#FFFFFF; font-size:12px; box-sizing:border-box; outline:none;">
-              <option value="LIFETIME_PERPETUAL">LIFETIME_PERPETUAL (Permanent Sovereign Ownership)</option>
-              <option value="1_YEAR_ANNUAL_AMC">1_YEAR_ANNUAL_AMC (12-Month Enterprise)</option>
-              <option value="ENTERPRISE_MULTI_COUNTER">ENTERPRISE_MULTI_COUNTER (Multi-Terminal Fleet)</option>
-              <option value="CA_AUDIT_PRO">CA_AUDIT_PRO (Chartered Accountant Statutory)</option>
+              <option value="Tier 1: Solo Practitioner / Consultant (1 Workstation)">Tier 1: Solo Practitioner / Consultant (1 Workstation)</option>
+              <option value="Tier 2: Law Firm & Title Agency (5 Workstations Multi-Seat)">Tier 2: Law Firm & Title Agency (5 Workstations Multi-Seat)</option>
+              <option value="Tier 3: Enterprise Corporate Compliance Fleet (Unlimited Seats)">Tier 3: Enterprise Corporate Compliance Fleet (Unlimited Seats)</option>
+              <option value="Tier 4: CA Audit Pro / Full Source Code + VIP Founder Onboarding">Tier 4: CA Audit Pro / Full Source Code + VIP Founder Onboarding</option>
+            </select>
+          </div>
+
+          <!-- Row: License Validity / Duration -->
+          <div style="margin-bottom:12px;">
+            <label style="display:block; font-size:11px; font-weight:700; color:#F59E0B; margin-bottom:4px; text-transform:uppercase;">⏳ License Validity / Duration</label>
+            <select id="rql-select-duration" style="width:100%; padding:9px 12px; border-radius:10px; background:#1E293B; border:1px solid #334155; color:#FFFFFF; font-size:12px; box-sizing:border-box; outline:none;">
+              <option value="LIFETIME_PERPETUAL">LIFETIME_PERPETUAL (One-Time Payment • Forever Access)</option>
+              <option value="1_YEAR_RENEWAL">1_YEAR_RENEWAL (12-Month Access • Yearly Renewal / Upgrade)</option>
             </select>
           </div>
 
@@ -168,6 +191,7 @@
     const custInput = document.getElementById("rql-input-cust");
     const prodSelect = document.getElementById("rql-select-prod");
     const tierSelect = document.getElementById("rql-select-tier");
+    const durationSelect = document.getElementById("rql-select-duration");
     const genBtn = document.getElementById("rql-btn-gen");
     const results = document.getElementById("rql-results");
     const resPin = document.getElementById("rql-res-pin");
@@ -204,7 +228,9 @@
       }
       const prod = prodSelect.value;
       const tier = tierSelect.value;
+      const duration = durationSelect.value;
       const cust = custInput.value.trim() || "Valued Commercial Partner";
+      const isLifetime = duration.includes("LIFETIME");
 
       // Compute Fast PIN: SHA-256(mid:salt)
       const raw = mid + ":" + OFFLINE_MASTER_SALT;
@@ -212,13 +238,13 @@
       const pin = "KEY-" + h.slice(0, 4) + "-" + h.slice(4, 8) + "-" + h.slice(8, 12);
 
       resPin.innerText = pin;
-      tierTag.innerText = tier.replace("_PERPETUAL", "").replace("1_YEAR_", "");
+      tierTag.innerText = isLifetime ? "LIFETIME" : "1-YEAR RENEWAL";
 
-      const tierNotice = (tier === "LIFETIME_PERPETUAL") 
+      const validityNotice = isLifetime
         ? "Your software is unlocked permanently with zero recurring fees! 🛡️"
-        : `Your software is activated for ${tier} with full feature updates and VIP WhatsApp support! 🛡️`;
+        : "Your software is activated for 1 Year (12 Months). At the end of the year, you can easily renew for another year or upgrade to Lifetime Perpetual anytime! 🛡️";
 
-      generatedMessage = `Thank you for choosing Rehan Quant Lab Sovereign Suite! 🙏\n\n🖥️ Hardware Machine ID: ${mid}\n📦 Licensed Product: ${prod}\n🏢 Licensee: ${cust}\n🏷️ License Tier: ${tier}\n\n🔑 Fast Offline Activation Key:\n${pin}\n\nHow to activate:\n1. Open your application\n2. Paste this Key into the Activation Gate\n3. Click 'Activate & Unlock Workstation'\n\n${tierNotice}`;
+      generatedMessage = `Thank you for choosing Rehan Quant Lab Sovereign Suite! 🙏\n\n🖥️ Hardware Machine ID: ${mid}\n📦 Licensed Product: ${prod}\n🏢 Licensee: ${cust}\n🏷️ Version Tier: ${tier}\n⏳ License Validity: ${isLifetime ? "Lifetime Perpetual" : "1-Year License (Yearly Renewal)"}\n\n🔑 Fast Offline Activation Key:\n${pin}\n\nHow to activate:\n1. Open your application\n2. Paste this Key into the Activation Gate\n3. Click 'Activate & Unlock Workstation'\n\n${validityNotice}`;
 
       results.style.display = "block";
     });
@@ -275,7 +301,7 @@
         const now = Date.now();
         if (now - lastTapTime < 2500) {
           tapCount++;
-          e.preventDefault(); // Stop navigation while tapping rapidly!
+          e.preventDefault();
         } else {
           tapCount = 1;
         }
