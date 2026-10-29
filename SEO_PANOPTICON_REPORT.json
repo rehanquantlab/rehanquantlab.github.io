@@ -1,46 +1,46 @@
 {
   "timestamp": "2026-10-29",
   "base_directory": "C:\\Users\\rehan\\Desktop\\Rehan_Quant_Lab\\Website_RehanQuantLab",
-  "total_html_files": 9,
-  "total_word_count": 19578,
+  "total_html_files": 8,
+  "total_word_count": 19761,
   "broken_links_count": 0,
   "broken_links": [],
   "keyword_matrix": {
     "offline billing": {
-      "count": 1,
-      "density_pct": 0.01
+      "count": 3,
+      "density_pct": 0.02
     },
     "zero monthly fee": {
-      "count": 0,
-      "density_pct": 0.0
+      "count": 2,
+      "density_pct": 0.01
     },
     "lifetime license": {
-      "count": 20,
-      "density_pct": 0.1
+      "count": 22,
+      "density_pct": 0.11
     },
     "air-gapped": {
-      "count": 53,
-      "density_pct": 0.27
+      "count": 51,
+      "density_pct": 0.26
     },
     "pos software": {
-      "count": 0,
-      "density_pct": 0.0
+      "count": 2,
+      "density_pct": 0.01
     },
     "desktop software": {
-      "count": 5,
+      "count": 6,
       "density_pct": 0.03
     },
     "expressbill": {
-      "count": 12,
-      "density_pct": 0.06
+      "count": 13,
+      "density_pct": 0.07
     },
     "storeflow": {
       "count": 5,
       "density_pct": 0.03
     },
     "sovereign computing": {
-      "count": 0,
-      "density_pct": 0.0
+      "count": 2,
+      "density_pct": 0.01
     },
     "systems architect": {
       "count": 15,
@@ -51,7 +51,7 @@
       "density_pct": 0.04
     },
     "rehan quant lab": {
-      "count": 51,
+      "count": 52,
       "density_pct": 0.26
     }
   },
@@ -84,19 +84,10 @@
       "has_schema_engine": true
     },
     {
-      "file": "googlecb5b21d2c61033d5.html",
-      "title_length": 7,
-      "title_valid": true,
-      "desc_length": 7,
-      "desc_valid": false,
-      "has_canonical": false,
-      "has_schema_engine": false
-    },
-    {
       "file": "index.html",
       "title_length": 66,
       "title_valid": true,
-      "desc_length": 170,
+      "desc_length": 160,
       "desc_valid": true,
       "has_canonical": true,
       "has_schema_engine": true
@@ -138,6 +129,6 @@
       "has_schema_engine": true
     }
   ],
-  "seo_panopticon_score": 97,
+  "seo_panopticon_score": 100,
   "verdict": "TITANIUM A+ COMPLIANT"
 }
