@@ -4,6 +4,7 @@
  * All 19 Sovereign Products + Universal Master Suite
  * 4 Gumroad Version Tiers (Solo, 5-Seat Firm, Enterprise Fleet, CA Audit/VIP)
  * Lifetime Perpetual vs 1-Year Renewal (Yearly Renewal / Upgrade)
+ * Integrated Live Signature Verification Playground (Simulate Client App)
  * Secret Trigger 1: Tap "Available for High-Impact Roles" badge 5 times!
  * Secret Trigger 2: Visit rehanquantlab.com/#founder (Instant access on mobile)
  * Secret Trigger 3: Press Ctrl + Shift + F on keyboard
@@ -160,6 +161,17 @@
             <button id="rql-btn-copy-wa" style="width:100%; padding:10px; border-radius:10px; background:#059669; border:none; color:#FFFFFF; font-weight:700; font-size:13px; cursor:pointer;">📋 Copy WhatsApp Message</button>
             <div id="rql-copy-toast" style="text-align:center; color:#4ADE80; font-size:12px; font-weight:bold; margin-top:6px; display:none;">✓ Copied to clipboard! Ready to paste in WhatsApp.</div>
           </div>
+
+          <!-- 🔍 LIVE SIGNATURE VERIFICATION PLAYGROUND (MOBILE & WEB) -->
+          <div style="margin-top:16px; background:rgba(30,58,138,0.2); border:1px solid #3B82F6; border-radius:12px; padding:12px;">
+            <div style="font-size:11px; font-weight:700; color:#60A5FA; margin-bottom:6px; text-transform:uppercase;">🔍 Live Signature Verification Playground (Simulate Client App)</div>
+            <div style="display:flex; gap:8px;">
+              <input type="text" id="rql-input-test" placeholder="Paste Fast PIN or Master Key to test..." style="flex:1; padding:8px 10px; border-radius:8px; background:#1E293B; border:1px solid #334155; color:#FFFFFF; font-size:12px; outline:none; box-sizing:border-box;">
+              <button id="rql-btn-test-key" style="background:#3B82F6; border:none; color:#FFFFFF; font-weight:700; font-size:11px; padding:8px 14px; border-radius:8px; cursor:pointer; shrink:0;">Test Key</button>
+            </div>
+            <div id="rql-test-result" style="font-size:11px; color:#94A3B8; margin-top:6px; line-height:1.4;">Ready to verify. Enter customer Machine ID above, paste key, and tap 'Test Key'.</div>
+          </div>
+
         </div>
 
       </div>
@@ -198,6 +210,10 @@
     const tierTag = document.getElementById("rql-tier-tag");
     const copyWaBtn = document.getElementById("rql-btn-copy-wa");
     const copyToast = document.getElementById("rql-copy-toast");
+
+    const testInput = document.getElementById("rql-input-test");
+    const testBtn = document.getElementById("rql-btn-test-key");
+    const testResult = document.getElementById("rql-test-result");
 
     let generatedMessage = "";
 
@@ -247,6 +263,11 @@
       generatedMessage = `Thank you for choosing Rehan Quant Lab Sovereign Suite! 🙏\n\n🖥️ Hardware Machine ID: ${mid}\n📦 Licensed Product: ${prod}\n🏢 Licensee: ${cust}\n🏷️ Version Tier: ${tier}\n⏳ License Validity: ${isLifetime ? "Lifetime Perpetual" : "1-Year License (Yearly Renewal)"}\n\n🔑 Fast Offline Activation Key:\n${pin}\n\nHow to activate:\n1. Open your application\n2. Paste this Key into the Activation Gate\n3. Click 'Activate & Unlock Workstation'\n\n${validityNotice}`;
 
       results.style.display = "block";
+
+      if (testInput) {
+        testInput.value = pin;
+        testResult.innerHTML = `<span style="color:#60A5FA;">🔑 Fast PIN copied to test playground! Click 'Test Key' to simulate client verification on machine ${mid}.</span>`;
+      }
     });
 
     copyWaBtn.addEventListener("click", () => {
@@ -257,6 +278,42 @@
         }, 2500);
       });
     });
+
+    if (testBtn) {
+      testBtn.addEventListener("click", async () => {
+        const raw = testInput.value.trim();
+        if (!raw) {
+          testResult.innerHTML = "<span style='color:#EF4444;'>Please paste a key into the test box first.</span>";
+          return;
+        }
+
+        const mid = midInput.value.trim().toUpperCase();
+
+        if (raw === MASTER_KEY || raw === "RQL-REHAN-QUANT-TITAN-ALPHA-70915") {
+          testResult.innerHTML = "<span style='color:#10B981; font-weight:bold;'>👑 100% VALID [FOUNDER MASTER KEY]: Unlocks ALL 19 sovereign products permanently on ANY hardware.</span>";
+          return;
+        }
+
+        if (raw.toUpperCase().startsWith("KEY-")) {
+          if (!mid) {
+            testResult.innerHTML = "<span style='color:#F59E0B;'>⚠️ Please enter the customer's Machine ID in the box above so we can verify if this Fast PIN belongs to their machine.</span>";
+            return;
+          }
+          const rawHash = mid + ":" + OFFLINE_MASTER_SALT;
+          const h = (await sha256(rawHash)).toUpperCase();
+          const expected = "KEY-" + h.slice(0, 4) + "-" + h.slice(4, 8) + "-" + h.slice(8, 12);
+
+          if (raw.toUpperCase() === expected) {
+            testResult.innerHTML = `<span style='color:#10B981; font-weight:bold;'>✅ 100% VALID [FAST OFFLINE PIN]: Verified for Machine ID ${mid} • Hardware Bound & Node-Locked.</span>`;
+          } else {
+            testResult.innerHTML = `<span style='color:#EF4444; font-weight:bold;'>❌ INVALID FAST PIN: This key does NOT match Machine ID '${mid}'.</span>`;
+          }
+          return;
+        }
+
+        testResult.innerHTML = "<span style='color:#EF4444;'>❌ UNRECOGNIZED KEY FORMAT: Expected Fast PIN (KEY-XXXX-...) or Founder Master Key.</span>";
+      });
+    }
   }
 
   function handleSecretTap(e) {
