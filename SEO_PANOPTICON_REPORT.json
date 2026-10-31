@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-10-29",
+  "timestamp": "2026-10-30",
   "base_directory": "C:\\Users\\rehan\\Desktop\\Rehan_Quant_Lab\\Website_RehanQuantLab",
-  "total_html_files": 8,
-  "total_word_count": 19761,
+  "total_html_files": 9,
+  "total_word_count": 21470,
   "broken_links_count": 0,
   "broken_links": [],
   "keyword_matrix": {
     "offline billing": {
       "count": 3,
-      "density_pct": 0.02
+      "density_pct": 0.01
     },
     "zero monthly fee": {
       "count": 2,
@@ -16,11 +16,11 @@
     },
     "lifetime license": {
       "count": 22,
-      "density_pct": 0.11
+      "density_pct": 0.1
     },
     "air-gapped": {
-      "count": 51,
-      "density_pct": 0.26
+      "count": 53,
+      "density_pct": 0.25
     },
     "pos software": {
       "count": 2,
@@ -31,11 +31,11 @@
       "density_pct": 0.03
     },
     "expressbill": {
-      "count": 13,
+      "count": 15,
       "density_pct": 0.07
     },
     "storeflow": {
-      "count": 5,
+      "count": 6,
       "density_pct": 0.03
     },
     "sovereign computing": {
@@ -44,15 +44,15 @@
     },
     "systems architect": {
       "count": 15,
-      "density_pct": 0.08
+      "density_pct": 0.07
     },
     "documentshield": {
-      "count": 7,
+      "count": 8,
       "density_pct": 0.04
     },
     "rehan quant lab": {
-      "count": 52,
-      "density_pct": 0.26
+      "count": 53,
+      "density_pct": 0.25
     }
   },
   "meta_audits": [
@@ -124,6 +124,15 @@
       "title_length": 51,
       "title_valid": true,
       "desc_length": 133,
+      "desc_valid": true,
+      "has_canonical": true,
+      "has_schema_engine": true
+    },
+    {
+      "file": "vault.html",
+      "title_length": 46,
+      "title_valid": true,
+      "desc_length": 93,
       "desc_valid": true,
       "has_canonical": true,
       "has_schema_engine": true
