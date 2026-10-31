@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="scroll-smooth" lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; script-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: data: blob: 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' https: data:; frame-src 'self' https:; connect-src 'self' https: wss:;"/>
 <title>Commercial Desktop Software Store | Rehan Quant Lab</title>
 <meta name="description" content="Air-gapped desktop business software for retail, accounting, and quant institutions. Zero monthly fees, lifetime licenses on Gumroad.">
 <link rel="canonical" href="https://rehanquantlab.com/store.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Commercial Desktop Software Store | Rehan Quant Lab"/>
+<meta property="og:description" content="Air-gapped desktop business software for retail, accounting, and quant institutions. Zero monthly fees, lifetime licenses on Gumroad."/>
+<meta property="og:url" content="https://rehanquantlab.com/store.html"/>
+<meta property="og:image" content="https://rehanquantlab.com/emblem.jpg"/>
 <link rel="icon" type="image/jpeg" href="emblem.jpg"/>
 <link rel="apple-touch-icon" href="emblem.jpg"/>
 
@@ -48,79 +54,16 @@ tailwind.config = {
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Rehan Quant Lab™ Desktop Business Applications & Flagship Bundles",
-  "description": "17 high-performance, air-gapped commercial desktop software suites engineered for retail store owners, chartered accountants, and quant institutions.",
+  "name": "Rehan Quant Lab™ Pure-Rust Sovereign Commercial Software Flagships",
+  "description": "High-performance, air-gapped commercial desktop software suites engineered in 100% pure native Rust for enterprise privacy, PDF forensic redaction, and local AI voice intelligence.",
   "itemListElement": [
     {
       "@type": "SoftwareApplication",
       "position": 1,
-      "name": "RQL Retail Suite™ (7-in-1 Master Setup)",
-      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
-      "applicationCategory": "BusinessApplication",
-      "description": "Complete offline retail desktop suite including StoreFlow POS, ExpressBill, StockAudit barcode audit, TagMaster thermal labels, and OmniDispatch WhatsApp invoices.",
-      "offers": {
-        "@type": "Offer",
-        "price": "129.00",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "url": "https://quantify17.gumroad.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "184"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "position": 2,
-      "name": "RQL CA & Tax Audit Suite™ (3-in-1 Master Setup)",
-      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
-      "applicationCategory": "BusinessApplication",
-      "description": "Automated statutory audit suite for Chartered Accountants: 1-Click GSTR-2B invoice matching, Tally/SAP ledger variance detector, and MCA Rule 11(g) audit trail vault.",
-      "offers": {
-        "@type": "Offer",
-        "price": "149.00",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "url": "https://quantify17.gumroad.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.95",
-        "reviewCount": "142"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "position": 3,
-      "name": "RQL Quant FinTech Core™ (6-in-1 Master Setup)",
-      "operatingSystem": "Windows 10, Windows 11 (64-bit)",
-      "applicationCategory": "DeveloperApplication",
-      "description": "Quantitative trading infrastructure: Deterministic state kernel with WAL journaling, Aegis pre-trade margin risk middleware, multi-WAN Conduit bonding, and Industrial Sentinel SCADA telemetry.",
-      "offers": {
-        "@type": "Offer",
-        "price": "199.00",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2027-12-31",
-        "availability": "https://schema.org/InStock",
-        "url": "https://quantify17.gumroad.com"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.98",
-        "reviewCount": "96"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "position": 4,
-      "name": "RQL DocumentShield™ (Enterprise Forensic PDF Redactor)",
+      "name": "RQL DocumentShield™ (Enterprise PDF Redactor & Metadata Removal)",
       "operatingSystem": "Windows 10, Windows 11 (64-bit)",
       "applicationCategory": "SecurityApplication",
-      "description": "Enterprise Forensic PDF Redactor & Deep Metadata Purge OS with automated SSN/EIN detection and court-admissible SHA-256 compliance vault.",
+      "description": "Enterprise Forensic PDF Redactor & Deep Metadata Removal Software: True destructive vector burn, automated SSN/EIN detection, and court-admissible SHA-256 compliance vault.",
       "offers": {
         "@type": "Offer",
         "price": "199.00",
@@ -137,8 +80,8 @@ tailwind.config = {
     },
     {
       "@type": "SoftwareApplication",
-      "position": 5,
-      "name": "RQL WhisperVault™ (Air-Gapped AI Voice Intelligence OS)",
+      "position": 2,
+      "name": "RQL WhisperVault™ (Offline AI Speech Recognition & Transcription)",
       "operatingSystem": "Windows 10, Windows 11 (64-bit)",
       "applicationCategory": "MultimediaApplication",
       "description": "100% Offline speech-to-text transcription, word-level SRT/VTT subtitle generation, and executive PDF meeting reports. Powered by local Whisper AI with zero cloud uploads.",
@@ -169,7 +112,7 @@ tailwind.config = {
       <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
       <span class="text-emerald-400 font-bold uppercase text-[10px] tracking-wider shrink-0">⭐ COMMERCIAL SUITES:</span>
       <span class="text-slate-200 text-xs truncate">
-        <strong>17 Offline Desktop Applications &amp; Suites</strong> &bull; Instant Gumroad Digital Delivery
+        <strong>2 Pure-Rust Sovereign Workstations</strong> &bull; Instant Gumroad Digital Delivery
       </span>
     </div>
     <div class="flex items-center gap-3 shrink-0 text-xs font-sans">
@@ -200,10 +143,10 @@ tailwind.config = {
 <a class="text-slate-600 hover:text-slate-950 font-medium transition py-1" href="index.html">Home</a>
 
 <!-- Dedicated Commercial Suites Tab (Glowing Pill with Live Count) -->
-<a class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 text-white font-bold transition shadow-xs group/store" href="store.html" title="17 Desktop Business Applications & Commercial Software on Gumroad">
+<a class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 text-white font-bold transition shadow-xs group/store" href="store.html" title="2 Pure-Rust Sovereign Commercial Software Flagships on Gumroad">
 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
 <span>Commercial Suites</span>
-<span class="bg-rose-600 text-white text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold">17</span>
+<span class="bg-rose-600 text-white text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold">2</span>
 </a>
 
 <a class="text-slate-600 hover:text-slate-950 font-medium transition py-1" href="projects.html">Projects</a>
@@ -235,7 +178,7 @@ tailwind.config = {
 <div class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-2.5 shadow-xl" id="mobile-menu">
 <a class="block py-2 px-3 rounded-lg hover:bg-slate-50 text-slate-600 font-medium text-sm" href="index.html">Home</a>
 <a class="block py-2 px-3 rounded-lg bg-slate-900 text-white font-bold text-sm flex items-center justify-between" href="store.html">
-<span>🛒 Commercial Suites (16 Suites)</span>
+<span>Commercial Suites (3 Flagships)</span>
 <span class="bg-rose-600 text-white text-[10px] px-2 py-0.5 rounded-full font-mono">Instant Gumroad</span>
 </a>
 <a class="block py-2 px-3 rounded-lg hover:bg-slate-50 text-slate-600 font-medium text-sm" href="projects.html">Projects</a>
@@ -290,7 +233,7 @@ Resume (PDF)
 
       <!-- Subtitle -->
       <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed">
-        17 sovereign computing suites engineered for offline billing, retail POS software, chartered accountants, and quant institutions. <strong>Pay once, own forever on Gumroad &mdash; zero monthly fee and lifetime license.</strong>
+        3 pure-rust sovereign computing suites engineered for confidential document redaction, offline AI speech recognition, and air-gapped business security. <strong>Pay once, own forever on Gumroad &mdash; zero monthly fee and lifetime license.</strong>
       </p>
 
       <!-- 4 Stat Highlights (Clean White Cards matching Experience.html) -->
@@ -328,7 +271,7 @@ Resume (PDF)
             <i class="w-3.5 h-3.5 text-indigo-600" data-lucide="package"></i>
             <span>Digital Releases</span>
           </div>
-          <div class="text-xl sm:text-2xl font-black font-heading text-slate-900 mt-1">17 Suites</div>
+          <div class="text-xl sm:text-2xl font-black font-heading text-slate-900 mt-1">2 Flagships</div>
           <div class="text-[11px] text-slate-500 font-mono mt-0.5">Live on Gumroad</div>
         </div>
 
@@ -340,435 +283,192 @@ Resume (PDF)
   <!-- Store Catalog Section (Clean White Background) -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
     
-    <!-- ====================================================================== -->
-    <!-- 👑 FEATURED COMMERCIAL MASTER FLEETS (3 MEGA-BUNDLES) -->
-    <!-- ====================================================================== -->
-    <div class="mb-14">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-8">
-        <div>
-          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[11px] font-mono font-bold mb-2">
-            <span>📦 Flagship Software Bundles</span>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-black font-heading text-slate-900 tracking-tight">
-            1-Click Master Setup Bundles
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-600 mt-1">
-            Official Windows Setup Wizard (<code class="bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">Setup.exe</code>) &bull; Interactive Desktop Shortcuts Checklist &bull; Air-Gapped Machine Ownership
-          </p>
-        </div>
-        <span class="inline-flex items-center gap-1.5 text-xs font-mono font-bold text-emerald-700 bg-emerald-50 px-3.5 py-1.5 rounded-xl border border-emerald-200">
-          ✓ Save up to 65% vs Single Suites
-        </span>
+    <!-- Header -->
+    <div class="mb-10 text-center max-w-3xl mx-auto space-y-2">
+      <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-50 border border-rose-200 text-rose-700 text-xs font-mono font-bold">
+        <span>&#128737;&#65039; Pure-Rust Sovereign Workstations</span>
       </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6">
-
-        <!-- MASTER SUITE 1: RQL DocumentShield™ Forensic Redaction OS -->
-        <div class="bg-gradient-to-b from-white to-rose-50/20 border-2 border-rose-300/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
-          <div class="absolute -top-3 left-6 bg-gradient-to-r from-rose-700 to-red-600 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-            🛡️ LIVE OFFICIAL RELEASE
-          </div>
-          <div>
-            <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
-              <img src="18_RQL_DocumentShield_Cover_1080p.png" alt="RQL DocumentShield™ Master Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
-                Forensic OS v1.0
-              </div>
-              <div class="absolute top-3 right-3 bg-rose-500 text-white font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
-                HIPAA &amp; GDPR
-              </div>
-            </div>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span class="text-rose-700 font-bold">RQL_DocumentShield_Master_Setup.exe</span>
-                <span>Air-Gapped OS</span>
-              </div>
-              <h3 class="text-xl font-bold font-heading text-slate-900 group-hover:text-rose-600 transition">
-                RQL DocumentShield™
-              </h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Enterprise Forensic PDF Redaction &amp; Deep Metadata Purge OS: True destructive vector burn, automated SSN/EIN pattern detection, and SHA-256 compliance certificate.
-              </p>
-              <div class="pt-3 border-t border-slate-100 text-[11px] font-mono text-slate-600 space-y-1">
-                <div>✓ True Destructive Vector &amp; Text Purge</div>
-                <div>✓ Automated SSN, Tax EIN, Card &amp; Phone</div>
-                <div>✓ Court-Admissible SHA-256 Audit Certificate</div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-            <div class="p-3 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-center justify-between">
-              <div>
-                <div class="text-[10px] font-mono text-slate-500 uppercase">Perpetual Master License</div>
-                <div class="text-sm font-extrabold text-slate-900 font-mono">$199 <span class="text-xs text-slate-500 font-normal">/ ₹16,500</span></div>
-              </div>
-              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
-                Air-Gapped Vault
-              </span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="https://quantify17.gumroad.com/l/rql-documentshield" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
-                <span>Buy Setup</span>
-                <span>↗</span>
-              </a>
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20DocumentShield%E2%84%A2%20Master%20Setup%20($199%20/%20%E2%82%B916,500).%20Please%20assist%20with%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102">
-                <span>WhatsApp VIP</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- MASTER SUITE 2: RQL WhisperVault™ Air-Gapped AI Voice Intelligence OS -->
-        <div class="bg-gradient-to-b from-white to-sky-50/20 border-2 border-sky-300/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
-          <div class="absolute -top-3 left-6 bg-gradient-to-r from-sky-700 to-blue-600 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-            🎤 LIVE OFFICIAL RELEASE
-          </div>
-          <div>
-            <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
-              <img src="19_RQL_WhisperVault_Cover_1080p.png" alt="RQL WhisperVault™ Master Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
-                AI Speech OS v1.0
-              </div>
-              <div class="absolute top-3 right-3 bg-sky-500 text-white font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
-                100% Offline AI
-              </div>
-            </div>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span class="text-sky-700 font-bold">RQL_WhisperVault_Master_Setup.exe</span>
-                <span>Air-Gapped OS</span>
-              </div>
-              <h3 class="text-xl font-bold font-heading text-slate-900 group-hover:text-sky-600 transition">
-                RQL WhisperVault™
-              </h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Air-Gapped AI Voice Intelligence &amp; Meeting Transcription OS: Powered by local Whisper AI with word-level SRT/VTT subtitle generation and executive PDF meeting reports.
-              </p>
-              <div class="pt-3 border-t border-slate-100 text-[11px] font-mono text-slate-600 space-y-1">
-                <div>✓ 100% Offline Whisper AI (Zero Cloud Telemetry)</div>
-                <div>✓ Word-Level Subtitles (.SRT / .VTT)</div>
-                <div>✓ Executive PDF Reports &amp; SHA-256 Hash Vault</div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-            <div class="p-3 rounded-2xl bg-sky-50/70 border border-sky-200 flex items-center justify-between">
-              <div>
-                <div class="text-[10px] font-mono text-slate-500 uppercase">Perpetual Master License</div>
-                <div class="text-sm font-extrabold text-slate-900 font-mono">$199 <span class="text-xs text-slate-500 font-normal">/ ₹16,500</span></div>
-              </div>
-              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
-                Air-Gapped Vault
-              </span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="https://quantify17.gumroad.com/l/rql-whispervault" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
-                <span>Buy Setup</span>
-                <span>↗</span>
-              </a>
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20WhisperVault%E2%84%A2%20Master%20Setup%20($199%20/%20%E2%82%B916,500).%20Please%20assist%20with%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102">
-                <span>WhatsApp VIP</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- BUNDLE 3: RQL Sovereign Retail POS™ (3-Tier Suite) -->
-        <div class="bg-gradient-to-b from-white to-amber-50/20 border-2 border-amber-300/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
-          <div class="absolute -top-3 left-6 bg-gradient-to-r from-amber-600 to-amber-500 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-            🏪 3-Tier Enterprise POS
-          </div>
-          <div>
-            <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
-              <img src="Bundle_01_RQL_Retail_Master_Cover_1080p.png" alt="RQL Sovereign Retail POS™" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
-                3-Tier Architecture
-              </div>
-              <div class="absolute top-3 right-3 bg-amber-400 text-slate-950 font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
-                &lt; 1ms Rust
-              </div>
-            </div>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span class="text-amber-700 font-bold">Single Shop &bull; Multi-Chain &bull; Multi-City</span>
-                <span>Air-Gapped POS</span>
-              </div>
-              <h3 class="text-xl font-bold font-heading text-slate-900 group-hover:text-amber-600 transition">
-                RQL Sovereign Retail POS™
-              </h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Sub-millisecond offline retail POS &amp; distributed ledger: Tier 1 Single Counter, Tier 2 Multi-Chain LAN Sync, and Tier 3 Multi-City Enterprise Chain.
-              </p>
-              <div class="pt-3 border-t border-slate-100 text-[11px] font-mono text-slate-600 space-y-1">
-                <div>✓ Tier 1: Single Shop Standalone Workstation</div>
-                <div>✓ Tier 2: Multi-Chain Store LAN Counters</div>
-                <div>✓ Tier 3: Multi-City Distributed Branch Sync</div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-            <div class="p-3 rounded-2xl bg-amber-50/70 border border-amber-200 flex items-center justify-between">
-              <div>
-                <div class="text-[10px] font-mono text-slate-500 uppercase">3 Commercial Tiers</div>
-                <div class="text-sm font-extrabold text-slate-900 font-mono">From $199 <span class="text-xs text-slate-500 font-normal">/ ₹16,500</span></div>
-              </div>
-              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
-                In Construction
-              </span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20reserve%20early%20access%20for%20RQL%20Sovereign%20Retail%20POS%20(Single%20Shop%20/%20Multi-Chain%20/%20Multi-City)." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
-                <span>Reserve License</span>
-                <span>↗</span>
-              </a>
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20reserve%20early%20access%20for%20RQL%20Sovereign%20Retail%20POS%20(Single%20Shop%20/%20Multi-Chain%20/%20Multi-City)." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102">
-                <span>WhatsApp VIP</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- BUNDLE 4: Quant FinTech & CA Forensic Infrastructure Core -->
-        <div class="bg-gradient-to-b from-white to-emerald-50/20 border-2 border-emerald-300/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
-          <div class="absolute -top-3 left-6 bg-gradient-to-r from-emerald-700 to-teal-600 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
-            ⚡ For Quant Desks &amp; CAs
-          </div>
-          <div>
-            <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
-              <img src="Bundle_03_RQL_Quant_Core_Master_Cover_1080p.png" alt="RQL Enterprise Systems Core™" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
-                Bare-Metal x86 Core
-              </div>
-              <div class="absolute top-3 right-3 bg-emerald-500 text-white font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
-                Sub-50ns HFT
-              </div>
-            </div>
-            <div class="space-y-3">
-              <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
-                <span class="text-emerald-700 font-bold">Institutional Infrastructure</span>
-                <span>Air-Gapped Core</span>
-              </div>
-              <h3 class="text-xl font-bold font-heading text-slate-900 group-hover:text-emerald-600 transition">
-                RQL Enterprise Core™
-              </h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Quantitative Trading &amp; CA Forensic Infrastructure: Sub-50ns risk middleware, multi-WAN bonding engine, and automated GSTR/ledger reconciliation.
-              </p>
-              <div class="pt-3 border-t border-slate-100 text-[11px] font-mono text-slate-600 space-y-1">
-                <div>✓ RQL Aegis™ Risk Evaluation &bull; Sub-50ns</div>
-                <div>✓ RQL Conduit™ Multi-WAN Bonding Engine</div>
-                <div>✓ RQL TaxMatrix™ &bull; 100k Invoices &lt; 1s</div>
-              </div>
-            </div>
-          </div>
-          <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-            <div class="p-3 rounded-2xl bg-emerald-50/70 border border-emerald-200 flex items-center justify-between">
-              <div>
-                <div class="text-[10px] font-mono text-slate-500 uppercase">Institutional Deployment</div>
-                <div class="text-sm font-extrabold text-slate-900 font-mono">Custom <span class="text-xs text-slate-500 font-normal">/ Direct Onboarding</span></div>
-              </div>
-              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
-                VIP Deployment
-              </span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20discuss%20an%20enterprise%20deployment%20of%20RQL%20Enterprise%20Core." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
-                <span>Enterprise VIP</span>
-                <span>↗</span>
-              </a>
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20discuss%20an%20enterprise%20deployment%20of%20RQL%20Enterprise%20Core." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102">
-                <span>WhatsApp VIP</span>
-              </a>
-            </div>
-          </div>
-        </div>
-          <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-            <div class="p-3 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-center justify-between">
-              <div>
-                <div class="text-[10px] font-mono text-slate-500 uppercase">Perpetual Master License</div>
-                <div class="text-sm font-extrabold text-slate-900 font-mono">$199 <span class="text-xs text-slate-500 font-normal">/ ₹16,500</span></div>
-              </div>
-              <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
-                Air-Gapped Vault
-              </span>
-            </div>
-            <div class="grid grid-cols-2 gap-2">
-              <a href="https://quantify17.gumroad.com/l/rql-documentshield" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
-                <span>Buy Setup</span>
-                <span>↗</span>
-              </a>
-              <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20DocumentShield%E2%84%A2%20Master%20Setup%20($199%20/%20%E2%82%B916,500).%20Please%20assist%20with%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102">
-                <span>WhatsApp VIP</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    
-    <!-- Filter Pills Bar & Instant Search Input (Apple Neutral Styling) -->
-    <div class="mb-10 flex flex-col md:flex-row items-center justify-between gap-4 bg-slate-50 p-2 sm:p-3 rounded-2xl border border-slate-200/80">
-      
-      <!-- Category Filter Pills -->
-      <div class="flex flex-wrap items-center gap-1.5" id="store-filter-buttons">
-        <button onclick="filterStoreCategory('all', this)" class="store-cat-btn px-4 py-2 rounded-xl text-xs font-bold font-mono transition bg-slate-900 text-white shadow-xs cursor-pointer" data-cat="all">
-          🔥 All 17 Suites
-        </button>
-        <button onclick="filterStoreCategory('retail', this)" class="store-cat-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-700 hover:text-slate-950 hover:bg-white transition cursor-pointer" data-cat="retail">
-          🏪 Retail POS &amp; Stores (7)
-        </button>
-        <button onclick="filterStoreCategory('finance', this)" class="store-cat-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-700 hover:text-slate-950 hover:bg-white transition cursor-pointer" data-cat="finance">
-          🏦 CA &amp; Forensic Vaults (4)
-        </button>
-        <button onclick="filterStoreCategory('quant', this)" class="store-cat-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-700 hover:text-slate-950 hover:bg-white transition cursor-pointer" data-cat="quant">
-          ⚡ Quant &amp; Systems Cores (6)
-        </button>
-      </div>
-
-      <!-- Live Search Box -->
-      <div class="relative w-full md:w-80">
-        <input
-          type="text"
-          id="storeSearchInput"
-          oninput="handleStoreSearch(this.value)"
-          placeholder="Search suite (e.g. LedgerGuard, GST, POS)..."
-          class="w-full pl-4 pr-10 py-2 rounded-xl bg-white border border-slate-200 text-xs font-medium text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-900 shadow-2xs"
-        />
-        <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs font-mono">🔍</span>
-      </div>
-
+      <h2 class="text-3xl sm:text-4xl font-extrabold font-heading text-slate-900 tracking-tight">
+        Flagship Commercial Releases
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-600">
+        Official Windows Master Setup Wizards (<code class="bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">Setup.exe</code>) &bull; 100% Offline Air-Gapped Silicon &bull; Lifetime License &bull; Zero SaaS Rent
+      </p>
     </div>
 
-    <!-- 17 Commercial Product Cards (Clean White Cards matching Experience & Home) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7" id="commercial-products-grid">
+    <!-- 2 Sovereign Product Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 max-w-7xl mx-auto gap-7 mb-14">
 
-      <!-- Product Card: RQL DocumentShield™ Forensic PDF Redactor -->
-      <!-- Product Card: RQL WhisperVault™ Offline Voice Intelligence OS -->
-      <div class="store-product-card bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-xs hover:border-slate-300 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group" data-category="quant" data-keywords="whispervault rql whisper speech recognition transcription offline ai srt vtt meeting notes subtitles air-gapped audio transcriber">
-        
+      <!-- Product Card 1: RQL DocumentShield™ -->
+      <div class="bg-white border-2 border-rose-300/80 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
+        <div class="absolute -top-3 left-6 bg-gradient-to-r from-rose-700 to-red-600 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+          &#128737;&#65039; LIVE OFFICIAL RELEASE
+        </div>
         <div>
-          <!-- 1080p Cover Image Header -->
-          <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 mb-4">
-            <img
-              src="19_RQL_WhisperVault_Cover_1080p.png"
-              alt="RQL WhisperVault™ Offline Voice Intelligence"
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
-            
-            <!-- Category & Badge Overlays -->
-            <div class="absolute top-3 left-3 bg-slate-900/85 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold shadow-xs">
-              AI Voice OS
+          <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
+            <img src="18_RQL_DocumentShield_Cover_1080p.png" alt="RQL DocumentShield™ Master Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
+              Forensic OS v1.0
             </div>
+            <div class="absolute top-3 right-3 bg-rose-500 text-white font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
+              HIPAA &amp; GDPR
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
+              <span class="text-rose-700 font-bold">RQL_DocumentShield_Master_Setup.exe</span>
+              <span>Air-Gapped OS</span>
+            </div>
+            <h3 class="text-2xl font-bold font-heading text-slate-900 group-hover:text-rose-600 transition">
+              RQL DocumentShield™
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Enterprise Forensic PDF Redactor &amp; Deep Metadata Removal Software: True destructive vector burn, automated SSN/EIN pattern detection, and court-admissible SHA-256 compliance certificate.
+            </p>
+            <div class="pt-3 border-t border-slate-100 text-xs font-mono text-slate-600 space-y-1.5">
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>True Destructive Vector &amp; Text Purge</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Automated SSN, Tax EIN, Card &amp; Phone Scanner</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Court-Admissible SHA-256 Compliance Certificate</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
+          <div class="p-3.5 rounded-2xl bg-rose-50/70 border border-rose-200 flex items-center justify-between">
+            <div>
+              <div class="text-[10px] font-mono text-slate-500 uppercase font-semibold">Single Workstation Commercial License</div>
+              <div class="text-base font-extrabold text-slate-900 font-mono">$199 USD <span class="text-xs text-slate-500 font-normal">/ &#8377;18,887</span></div>
+              <div class="text-[10px] font-mono text-slate-500 mt-1">Single Workstation (&#8377;18,887) &bull; Practice 5-Seat (&#8377;28,378) &bull; Enterprise Multi-Seat (&#8377;47,361) &bull; Source Code (&#8377;75,835)</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
+              Pay Once, Own Forever
+            </span>
+          </div>
+          <div class="grid grid-cols-2 gap-2.5">
+            <a href="https://quantify17.gumroad.com/l/rql-documentshield" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
+              <span>Buy on Gumroad</span>
+              <span>&rarr;</span>
+            </a>
+            <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20DocumentShield%E2%84%A2%20Enterprise%20Source%20Code%20Edition%20(%E2%82%B975,835).%20Please%20assist%20with%20founder%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102" title="Enterprise Source Code Edition (&#8377;75,835) Direct Founder Onboarding">
+                <span>Source Code VIP</span>
+              </a>
+          </div>
+        </div>
+      </div>
 
-            <div class="absolute top-3 right-3 bg-sky-100 text-sky-800 border border-sky-200 px-2.5 py-1 rounded-full text-[10px] font-mono font-bold shadow-xs">
+      <!-- Product Card 2: RQL WhisperVault™ -->
+      <div class="bg-white border-2 border-sky-300/80 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
+        <div class="absolute -top-3 left-6 bg-gradient-to-r from-sky-700 to-blue-600 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+          &#127908; LIVE OFFICIAL RELEASE
+        </div>
+        <div>
+          <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
+            <img src="19_RQL_WhisperVault_Cover_1080p.png" alt="RQL WhisperVault™ Master Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
+              AI Speech OS v1.0
+            </div>
+            <div class="absolute top-3 right-3 bg-sky-500 text-white font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
               100% Offline AI
             </div>
           </div>
-
-          <!-- Body Content -->
           <div class="space-y-3">
             <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
-              <span class="text-sky-700 font-bold">AI Speech OS v1.0</span>
-              <span>100% Offline Air-Gapped</span>
+              <span class="text-sky-700 font-bold">RQL_WhisperVault_Master_Setup.exe</span>
+              <span>Air-Gapped OS</span>
             </div>
-
-            <h3 class="text-lg font-bold font-heading text-slate-900 group-hover:text-sky-600 transition line-clamp-1">
+            <h3 class="text-2xl font-bold font-heading text-slate-900 group-hover:text-sky-600 transition">
               RQL WhisperVault™
             </h3>
-
-            <p class="text-xs text-slate-600 leading-relaxed line-clamp-2">
-              Air-Gapped AI Voice Intelligence &amp; Meeting Transcription OS with millisecond word-level SRT/VTT subtitles and executive PDF reports.
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Offline AI Speech Recognition &amp; Meeting Transcription Software: Local speech-to-text intelligence for attorneys, physicians, corporate executives, and content creators. Word-level subtitles and executive PDF reports.
             </p>
-
-            <!-- Feature Bullet Points -->
-            <div class="pt-3 border-t border-slate-100 space-y-1.5 text-[11px] font-mono text-slate-600">
-              <div class="text-sky-700 font-bold">✓ 100% Offline Whisper AI (Zero Cloud Telemetry)</div>
-              <div>✓ Word-Level Subtitle Generator (.SRT / .VTT)</div>
-              <div>✓ Executive PDF Reports &amp; SHA-256 Hash Vault</div>
+            <div class="pt-3 border-t border-slate-100 text-xs font-mono text-slate-600 space-y-1.5">
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>100% Offline Local Whisper AI (Zero Cloud Telemetry)</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Millisecond Word-Level Subtitles (.SRT / .VTT)</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Executive PDF Meeting Summaries &amp; SHA-256 Hash Vault</span></div>
             </div>
           </div>
         </div>
-
-        <!-- Footer Pricing & Direct Buttons -->
         <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-          <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
+          <div class="p-3.5 rounded-2xl bg-sky-50/70 border border-sky-200 flex items-center justify-between">
             <div>
-              <div class="text-[10px] font-mono text-slate-500 uppercase">Perpetual Master License</div>
-              <div class="text-sm font-extrabold text-slate-900 font-mono">$199 <span class="text-xs text-slate-500 font-normal">/ ₹16,500</span></div>
+              <div class="text-[10px] font-mono text-slate-500 uppercase font-semibold">Single Workstation Professional License</div>
+              <div class="text-base font-extrabold text-slate-900 font-mono">$199 USD <span class="text-xs text-slate-500 font-normal">/ &#8377;18,887</span></div>
+              <div class="text-[10px] font-mono text-slate-500 mt-1">Single Workstation (&#8377;18,887) &bull; Practice 5-Seat (&#8377;28,378) &bull; Enterprise Multi-Seat (&#8377;47,361) &bull; Source Code (&#8377;75,835)</div>
             </div>
-            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100/80 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
+            <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
               Pay Once, Own Forever
             </span>
           </div>
-
-          <div class="grid grid-cols-2 gap-2">
-            <a
-              href="https://quantify17.gumroad.com/l/rql-whispervault"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102"
-              title="Acquire on Gumroad"
-            >
+          <div class="grid grid-cols-2 gap-2.5">
+            <a href="https://quantify17.gumroad.com/l/rql-whispervault" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
               <span>Buy on Gumroad</span>
-              <span>↗</span>
+              <span>&rarr;</span>
             </a>
-
-            <a
-              href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20an%20enterprise%20license%20for%20RQL%20WhisperVault%E2%84%A2%20Offline%20Voice%20Intelligence%20($199%20/%20%E2%82%B916,500).%20Please%20assist%20with%20onboarding."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102"
-              title="Chat with Founder on WhatsApp"
-            >
-              <span>WhatsApp VIP</span>
-            </a>
+            <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20WhisperVault%E2%84%A2%20Enterprise%20Source%20Code%20Edition%20(%E2%82%B975,835).%20Please%20assist%20with%20founder%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102" title="Enterprise Source Code Edition (&#8377;75,835) Direct Founder Onboarding">
+                <span>Source Code VIP</span>
+              </a>
           </div>
         </div>
-
       </div>
 
-        <!-- Footer Pricing & Direct Buttons -->
-        <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
-          <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center justify-between">
-            <div>
-              <div class="text-[10px] font-mono text-slate-500 uppercase">Perpetual License</div>
-              <div class="text-sm font-extrabold text-slate-900 font-mono">$599  / ₹49,999</div>
+    
+      <!-- Product Card 3: RQL Sovereign Retail POS™ -->
+      <div class="bg-white border-2 border-amber-300/80 rounded-3xl p-6 sm:p-7 flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 relative group">
+        <div class="absolute -top-3 left-6 bg-gradient-to-r from-amber-600 to-amber-500 text-white text-[10px] font-mono font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+          🏪 LIVE OFFICIAL RELEASE
+        </div>
+        <div>
+          <div class="relative aspect-video w-full rounded-2xl overflow-hidden bg-slate-900 border border-slate-200/80 mb-4 mt-2">
+            <img src="RetailPOS_Cover_1080p.png" alt="RQL Sovereign Retail POS™ Master Setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <div class="absolute top-3 left-3 bg-slate-900/90 backdrop-blur-md px-2.5 py-1 rounded-full text-white text-[10px] font-mono font-bold">
+              Retail POS v1.0
             </div>
-            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100/80 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
+            <div class="absolute top-3 right-3 bg-amber-400 text-slate-950 font-mono font-bold text-[10px] px-2.5 py-1 rounded-full">
+              &lt; 1ms Rust
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-[11px] font-mono text-slate-500">
+              <span class="text-amber-700 font-bold">RQL_RetailPOS_Master_Setup.exe</span>
+              <span>Air-Gapped POS</span>
+            </div>
+            <h3 class="text-2xl font-bold font-heading text-slate-900 group-hover:text-amber-600 transition">
+              RQL Sovereign Retail POS™
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              High-Speed Offline Retail Point-of-Sale &amp; Inventory Ledger Engine: Sub-millisecond barcode checkout, 80mm/58mm thermal receipt printing, SQLite WAL double-entry ledger, and zero monthly subscriptions.
+            </p>
+            <div class="pt-3 border-t border-slate-100 text-xs font-mono text-slate-600 space-y-1.5">
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Sub-Second Barcode Checkout &amp; Split Payment Tender</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Hardware ESC/POS 80mm &amp; 58mm Thermal Bill Generation</span></div>
+              <div class="flex items-center gap-2"><span class="text-emerald-600 font-bold">&#10003;</span> <span>Double-Entry SQLite WAL Ledger &amp; Shift Audits (X/Z Reports)</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 mt-4 border-t border-slate-100 space-y-3">
+          <div class="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200 flex items-center justify-between">
+            <div>
+              <div class="text-[10px] font-mono text-slate-500 uppercase font-semibold">Single Workstation Commercial License</div>
+              <div class="text-base font-extrabold text-slate-900 font-mono">$199 USD <span class="text-xs text-slate-500 font-normal">/ &#8377;18,887</span></div>
+              <div class="text-[10px] font-mono text-slate-500 mt-1">Tier 1 Standard (&#8377;18,887) &bull; Tier 2 Managed (&#8377;28,378) &bull; Tier 3 Branded (&#8377;47,361) &bull; Source Code (&#8377;75,835)</div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-mono font-bold border border-emerald-200">
               Pay Once, Own Forever
             </span>
           </div>
-
-          <div class="grid grid-cols-2 gap-2">
-            <a
-              href="https://quantify17.gumroad.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102"
-              title="Acquire on Gumroad"
-            >
+          <div class="grid grid-cols-2 gap-2.5">
+            <a href="https://quantify17.gumroad.com/l/rql-retailpos" target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs font-heading flex items-center justify-center gap-1.5 shadow-xs transition hover:scale-102">
               <span>Buy on Gumroad</span>
-              <span>↗</span>
+              <span>&rarr;</span>
             </a>
-
-            <a
-              href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20an%20enterprise%20license%20for%20Sovereign%20Suite™%20Master%20Bundle%20($599%20%20/%20₹49,999).%20Please%20assist%20with%20onboarding."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-full py-2.5 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102"
-              title="Chat with Founder on WhatsApp"
-            >
-              <span>WhatsApp VIP</span>
-            </a>
+            <a href="https://wa.me/917091518548?text=Hello%20Mohammad%20Rehan,%20I%20want%20to%20acquire%20the%20RQL%20Sovereign%20Retail%20POS%E2%84%A2%20Enterprise%20Source%20Code%20Edition%20(%E2%82%B975,835).%20Please%20assist%20with%20founder%20onboarding." target="_blank" rel="noopener noreferrer" class="w-full py-3 px-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold text-xs font-mono flex items-center justify-center gap-1.5 transition hover:scale-102" title="Enterprise Source Code Edition (&#8377;75,835) Direct Founder Onboarding">
+                <span>Source Code VIP</span>
+              </a>
           </div>
         </div>
-
       </div>
 
     </div>
-
     <!-- Empty Search State -->
     <div id="store-empty-state" class="hidden text-center py-16 bg-slate-50 rounded-3xl border border-slate-200 p-8 my-8 shadow-xs">
       <p class="text-base text-slate-600">No software suites matched your search.</p>
@@ -784,7 +484,7 @@ Resume (PDF)
           <span>👑 ENTERPRISE ALL-IN-ONE BUNDLE</span>
         </div>
         <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">
-          Acquire All 17 Software Suites Under One Single Enterprise License.
+          Acquire All Three Sovereign Workstation Flagships Under One Single Enterprise License.
         </h3>
         <p class="text-xs sm:text-sm text-slate-300 max-w-2xl leading-relaxed">
           Complete commercial bundle with unlimited offline machine activations, Ed25519 hardware key generator, source code access, and direct founder architecture onboarding.
@@ -988,6 +688,6 @@ function resetStoreFilters() {
 }
 </script>
 
-<script src="founder_vault.js"></script>
+
 </body>
 </html>
