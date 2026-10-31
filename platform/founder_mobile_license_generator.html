@@ -84,13 +84,10 @@
     <!-- TIER SELECTOR FOR RETAIL POS -->
     <div id="tier_section" style="display: none; margin-top: 6px;">
       <div class="card-title">
-        <span>3. Retail POS Commercial Tier</span>
+        <span>3. Commercial Edition</span>
       </div>
       <div class="chip-group" id="tier_chips">
-        <div class="chip active" onclick="selectTier(0, this)">Tier 1: Standard</div>
-        <div class="chip" onclick="selectTier(1, this)">Tier 2: Managed</div>
-        <div class="chip" onclick="selectTier(2, this)">Tier 3: Branded</div>
-        <div class="chip" onclick="selectTier(3, this)">Tier 4: Sovereign</div>
+        <div class="chip active">Single Store Standalone Edition ($199)</div>
       </div>
     </div>
 
@@ -143,10 +140,7 @@
     ];
 
     const RETAIL_TIERS = [
-      { id: "RQL_RetailPOS", name: "Tier 1: Standard Standalone" },
-      { id: "RQL_RetailPOS_T2", name: "Tier 2: Managed Deployment" },
-      { id: "RQL_RetailPOS_T3", name: "Tier 3: Custom Branded Edition" },
-      { id: "RQL_RetailPOS_T4", name: "Tier 4: Enterprise Sovereign Source Edition" },
+      { id: "RQL_RetailPOS", name: "Single Store Standalone Workstation (1 Machine)" }
     ];
 
     let selectedIdx = 0;
@@ -227,7 +221,7 @@
              `🖥️ *Workstation Hardware ID:* \`${mid}\`\n` +
              `📦 *Licensed Product:* ${prod.name}\n` +
              `🏢 *Licensee:* ${cust}\n` +
-             `🏷️ *Tier:* ${tierName}\n` +
+             `🏷️ *License Edition:* ${tierName}\n` +
              `⏳ *Validity:* Permanent Silicon Ownership (Zero recurring monthly rent)\n\n` +
              `🔑 *FAST ACTIVATION PIN (PRIMARY):*\n` +
              `\`${pin}\`\n\n` +
