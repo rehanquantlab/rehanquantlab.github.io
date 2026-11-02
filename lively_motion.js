@@ -46,6 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
             actionColor: "text-orange-400"
         },
         {
+            label: "\u2B50 NEW RELEASE:",
+            labelColor: "text-cyan-400",
+            html: "<strong>RQL Conduit&trade;</strong> &bull; Pure-Rust Offline Internet Bonding &amp; Failover (<span class='text-cyan-400 font-bold'>From $99 USD</span>)",
+            url: "https://quantify17.gumroad.com/l/rql-conduit",
+            actionText: "Instant Checkout",
+            actionColor: "text-cyan-400"
+        },
+        {
             label: "\uD83D\uDC51 SOURCE CODE VIP:",
             labelColor: "text-purple-400",
             html: "<strong>Enterprise Source Code Edition</strong> (&#8377;75,835) &bull; Direct Founder WhatsApp Onboarding",
@@ -58,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             labelColor: "text-teal-400",
             html: "<strong>100% Pure Native Rust</strong> &bull; Zero Cloud Telemetry &bull; Lifetime Desktop License",
             url: "store.html",
-            actionText: "Commercial Suites (4)",
+            actionText: "Commercial Suites (5)",
             actionColor: "text-teal-400"
         }
     ];

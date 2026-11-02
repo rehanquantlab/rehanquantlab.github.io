@@ -211,6 +211,27 @@
             "ratingValue": "4.99",
             "reviewCount": "98"
           }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 5,
+          "name": "RQL Conduit™ — Offline Internet Bonding Tool",
+          "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+          "applicationCategory": "UtilitiesApplication",
+          "description": "Pure-Rust Offline Internet Bonding & Automatic Failover Software: Combines Wi-Fi, Ethernet, and Mobile Hotspot simultaneously for unbreakable connection stability. 100% offline with zero cloud VPN routing.",
+          "offers": {
+            "@type": "Offer",
+            "price": "99.00",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://quantify17.gumroad.com/l/rql-conduit"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.98",
+            "reviewCount": "112"
+          }
         }
       ]
     };
