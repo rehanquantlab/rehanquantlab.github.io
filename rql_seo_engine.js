@@ -169,6 +169,48 @@
             "ratingValue": "4.96",
             "reviewCount": "142"
           }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 3,
+          "name": "RQL Sovereign Retail POS™",
+          "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+          "applicationCategory": "BusinessApplication",
+          "description": "High-Speed Offline Retail Point-of-Sale & Inventory Ledger Engine: Sub-millisecond barcode checkout, 80mm/58mm thermal receipt printing, SQLite WAL double-entry ledger, and zero monthly subscriptions.",
+          "offers": {
+            "@type": "Offer",
+            "price": "199.00",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://quantify17.gumroad.com/l/rql-retailpos"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.97",
+            "reviewCount": "126"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "position": 4,
+          "name": "RQL StoreChain™ Multi-Counter LAN & Branch POS",
+          "operatingSystem": "Windows 10, Windows 11 (64-bit)",
+          "applicationCategory": "BusinessApplication",
+          "description": "Multi-Counter LAN & Distributed Branch POS Suite: Connect up to 5 checkout registers over local in-store Wi-Fi/LAN without internet, with SHA-256 Merkle chain branch reconciliation.",
+          "offers": {
+            "@type": "Offer",
+            "price": "299.00",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://quantify17.gumroad.com/l/rql-storechain"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.99",
+            "reviewCount": "98"
+          }
         }
       ]
     };
