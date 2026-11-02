@@ -12,8 +12,10 @@
 <meta property="og:description" content="Air-gapped desktop business software for retail, accounting, and quant institutions. Zero monthly fees, lifetime licenses on Gumroad."/>
 <meta property="og:url" content="https://rehanquantlab.com/store.html"/>
 <meta property="og:image" content="https://rehanquantlab.com/emblem.jpg"/>
-<link rel="icon" type="image/jpeg" href="emblem.jpg"/>
-<link rel="apple-touch-icon" href="emblem.jpg"/>
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+<link rel="apple-touch-icon" sizes="64x64" href="favicon-64x64.png" />
 
 <!-- Tailwind CSS CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -50,6 +52,7 @@ tailwind.config = {
   }
 </style>
   <script src="rql_seo_engine.js" defer></script>
+  <script src="lively_motion.js" defer></script>
 <script id="rql-schema-store-catalog" type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -886,6 +889,35 @@ function resetStoreFilters() {
 }
 </script>
 
+
+
+<script>
+// Standalone Cookie Consent Handlers
+window.acceptCookies = function() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+        try {
+            localStorage.setItem('cookie_consent_accepted', 'true');
+        } catch (e) {}
+        banner.style.opacity = '0';
+        banner.style.pointerEvents = 'none';
+        setTimeout(() => banner.remove(), 250);
+    }
+};
+
+window.dismissCookies = function() {
+    window.acceptCookies();
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    try {
+        if (localStorage.getItem('cookie_consent_accepted') === 'true') {
+            const banner = document.getElementById('cookie-banner');
+            if (banner) banner.remove();
+        }
+    } catch (e) {}
+});
+</script>
 
 </body>
 </html>
