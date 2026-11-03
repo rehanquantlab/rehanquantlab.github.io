@@ -13,6 +13,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://rehanquantlab.com/changelog.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://rehanquantlab.com/contact.html</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>

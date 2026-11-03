@@ -1,17 +1,22 @@
 {
   "timestamp": "2026-11-03",
   "base_directory": "C:\\Users\\rehan\\Desktop\\Rehan_Quant_Lab\\08_Build_Tools\\Website_RehanQuantLab",
-  "total_html_files": 10,
-  "total_word_count": 8820,
+  "total_html_files": 11,
+  "total_word_count": 9413,
   "broken_links_count": 0,
   "broken_links": [],
   "broken_assets_count": 0,
   "broken_assets": [],
   "keyword_matrix": {
-    "quantitative": {
-      "keyword": "quantitative",
-      "count": 18,
-      "density_pct": 0.2
+    "expressbill": {
+      "keyword": "expressbill",
+      "count": 1,
+      "density_pct": 0.01
+    },
+    "rehan quant lab": {
+      "keyword": "rehan quant lab",
+      "count": 56,
+      "density_pct": 0.59
     },
     "zero monthly fee": {
       "keyword": "zero monthly fee",
@@ -20,63 +25,58 @@
     },
     "deterministic": {
       "keyword": "deterministic",
-      "count": 16,
+      "count": 17,
       "density_pct": 0.18
     },
-    "lifetime license": {
-      "keyword": "lifetime license",
-      "count": 3,
-      "density_pct": 0.03
-    },
-    "expressbill": {
-      "keyword": "expressbill",
-      "count": 1,
-      "density_pct": 0.01
-    },
-    "pos software": {
-      "keyword": "pos software",
-      "count": 0,
-      "density_pct": 0.0
-    },
-    "storeflow": {
-      "keyword": "storeflow",
-      "count": 1,
-      "density_pct": 0.01
-    },
-    "rehan quant lab": {
-      "keyword": "rehan quant lab",
-      "count": 52,
-      "density_pct": 0.59
-    },
-    "air-gapped": {
-      "keyword": "air-gapped",
-      "count": 38,
-      "density_pct": 0.43
-    },
-    "offline billing": {
-      "keyword": "offline billing",
-      "count": 0,
-      "density_pct": 0.0
+    "desktop software": {
+      "keyword": "desktop software",
+      "count": 7,
+      "density_pct": 0.07
     },
     "sovereign computing": {
       "keyword": "sovereign computing",
       "count": 3,
       "density_pct": 0.03
     },
+    "quantitative": {
+      "keyword": "quantitative",
+      "count": 20,
+      "density_pct": 0.21
+    },
+    "storeflow": {
+      "keyword": "storeflow",
+      "count": 1,
+      "density_pct": 0.01
+    },
+    "offline billing": {
+      "keyword": "offline billing",
+      "count": 0,
+      "density_pct": 0.0
+    },
+    "air-gapped": {
+      "keyword": "air-gapped",
+      "count": 41,
+      "density_pct": 0.44
+    },
+    "pos software": {
+      "keyword": "pos software",
+      "count": 0,
+      "density_pct": 0.0
+    },
+    "lifetime license": {
+      "keyword": "lifetime license",
+      "count": 3,
+      "density_pct": 0.03
+    },
     "systems architect": {
       "keyword": "systems architect",
-      "count": 11,
-      "density_pct": 0.12
+      "count": 12,
+      "density_pct": 0.13
     },
     "documentshield": {
       "keyword": "documentshield",
-      "count": 19,
+      "count": 21,
       "density_pct": 0.22
-    },
-    "desktop software": {
-      "keyword": "desktop software",
-      "count": 6,
-      "density_pct": 0.07
     }
   },
   "meta_audits": [
@@ -100,6 +100,19 @@
       "title_valid": true,
       "description": "high-availability deterministic process supervisor with continuous invariant monitoring and sha-256 cryptographic write-ahead logging.",
       "desc_length": 134,
+      "desc_valid": true,
+      "has_canonical": true,
+      "has_schema_engine": true,
+      "has_og_tags": true,
+      "findings": []
+    },
+    {
+      "file": "changelog.html",
+      "title": "changelog &amp; releases | rehan quant lab™",
+      "title_length": 43,
+      "title_valid": true,
+      "description": "official release history and changelog for rehan quant lab. track pure-rust sovereign workstation updates, win32 kernels, and security patches.",
+      "desc_length": 143,
       "desc_valid": true,
       "has_canonical": true,
       "has_schema_engine": true,
@@ -215,5 +228,5 @@
   "verdict": "A+ COMPLIANT",
   "sitemap_generated": true,
   "robots_generated": true,
-  "execution_micros": 31611
+  "execution_micros": 25432
 }
