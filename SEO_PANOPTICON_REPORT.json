@@ -8,25 +8,10 @@
   "broken_assets_count": 0,
   "broken_assets": [],
   "keyword_matrix": {
-    "deterministic": {
-      "keyword": "deterministic",
-      "count": 18,
-      "density_pct": 0.18
-    },
-    "zero monthly fee": {
-      "keyword": "zero monthly fee",
-      "count": 3,
-      "density_pct": 0.03
-    },
-    "pos software": {
-      "keyword": "pos software",
+    "offline billing": {
+      "keyword": "offline billing",
       "count": 0,
       "density_pct": 0.0
-    },
-    "air-gapped": {
-      "keyword": "air-gapped",
-      "count": 42,
-      "density_pct": 0.43
     },
     "lifetime license": {
       "keyword": "lifetime license",
@@ -43,40 +28,55 @@
       "count": 3,
       "density_pct": 0.03
     },
-    "rehan quant lab": {
-      "keyword": "rehan quant lab",
-      "count": 61,
-      "density_pct": 0.62
+    "desktop software": {
+      "keyword": "desktop software",
+      "count": 8,
+      "density_pct": 0.08
+    },
+    "expressbill": {
+      "keyword": "expressbill",
+      "count": 1,
+      "density_pct": 0.01
     },
     "systems architect": {
       "keyword": "systems architect",
       "count": 13,
       "density_pct": 0.13
     },
-    "offline billing": {
-      "keyword": "offline billing",
+    "pos software": {
+      "keyword": "pos software",
       "count": 0,
       "density_pct": 0.0
-    },
-    "desktop software": {
-      "keyword": "desktop software",
-      "count": 8,
-      "density_pct": 0.08
-    },
-    "quantitative": {
-      "keyword": "quantitative",
-      "count": 22,
-      "density_pct": 0.22
     },
     "documentshield": {
       "keyword": "documentshield",
       "count": 21,
       "density_pct": 0.21
     },
-    "expressbill": {
-      "keyword": "expressbill",
-      "count": 1,
-      "density_pct": 0.01
+    "deterministic": {
+      "keyword": "deterministic",
+      "count": 18,
+      "density_pct": 0.18
+    },
+    "zero monthly fee": {
+      "keyword": "zero monthly fee",
+      "count": 3,
+      "density_pct": 0.03
+    },
+    "quantitative": {
+      "keyword": "quantitative",
+      "count": 22,
+      "density_pct": 0.22
+    },
+    "air-gapped": {
+      "keyword": "air-gapped",
+      "count": 42,
+      "density_pct": 0.43
+    },
+    "rehan quant lab": {
+      "keyword": "rehan quant lab",
+      "count": 61,
+      "density_pct": 0.62
     }
   },
   "meta_audits": [
@@ -238,8 +238,8 @@
     }
   ],
   "seo_panopticon_score": 100,
-  "verdict": "A+ COMPLIANT",
+  "verdict": "SSS+ SOVEREIGN APEX (TRANSCENDENT TITANIUM)",
   "sitemap_generated": true,
   "robots_generated": true,
-  "execution_micros": 69695
+  "execution_micros": 27939
 }
