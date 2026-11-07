@@ -312,7 +312,7 @@
 
     <div class="card-title" style="margin-top: 6px;">
       <span>2. Select Software Suite</span>
-      <span style="font-size: 10.5px; color: var(--gold); font-weight: 700;">10 PRODUCTS + MASTER</span>
+      <span style="font-size: 10.5px; color: var(--gold); font-weight: 700;">15 PRODUCTS + MASTER FLEET</span>
     </div>
 
     <!-- 10 PRODUCTS (01 TO 10) + ALL-SUITE MASTER -->
@@ -372,7 +372,27 @@
         <div class="chip-title">FontViewer™</div>
         <div class="chip-price">$45 Perpetual</div>
       </div>
-      <div class="chip" style="grid-column: 1 / -1;" onclick="selectProduct(11, this)">
+      <div class="chip" onclick="selectProduct(11, this)">
+        <div class="chip-code">#12 Legal DPDP</div>
+        <div class="chip-title">DPDPShield™</div>
+        <div class="chip-price">$89 Perpetual</div>
+      </div>
+      <div class="chip" onclick="selectProduct(12, this)">
+        <div class="chip-code">#13 Price Labels</div>
+        <div class="chip-title">PriceTag™</div>
+        <div class="chip-price">$79 Perpetual</div>
+      </div>
+      <div class="chip" onclick="selectProduct(13, this)">
+        <div class="chip-code">#14 Tax Invoice</div>
+        <div class="chip-title">InvoiceGen™</div>
+        <div class="chip-price">$89 Perpetual</div>
+      </div>
+      <div class="chip" onclick="selectProduct(14, this)">
+        <div class="chip-code">#15 CSV Sanitizer</div>
+        <div class="chip-title">CSVFormat™</div>
+        <div class="chip-price">$89 Perpetual</div>
+      </div>
+      <div class="chip" style="grid-column: 1 / -1;" onclick="selectProduct(15, this)">
         <div class="chip-code">👑 Master Access</div>
         <div class="chip-title">All-Suite Master</div>
         <div class="chip-price">$999 Universal</div>
@@ -477,6 +497,10 @@
       { id: "RQL_Renamer", name: "RQL Renamer™ (Bulk File & Photo Reorganizer)", price: "$49", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
       { id: "RQL_TagEditor", name: "RQL TagEditor™ (Lossless Audio Metadata & Artwork Workstation)", price: "$49", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
       { id: "RQL_FontViewer", name: "RQL FontViewer™ (Sovereign Offline Typography & Glyph Studio)", price: "$45", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
+      { id: "RQL_DPDPShield", name: "RQL DPDPShield™ (Court-Admissible Legal & Banking Redactor)", price: "$89", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
+      { id: "RQL_PriceTag", name: "RQL PriceTag™ (Supermarket Shelf Label & Barcode Studio)", price: "$79", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
+      { id: "RQL_InvoiceGen", name: "RQL InvoiceGen™ (2-Sec Sovereign PDF Tax Invoice Generator)", price: "$89", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
+      { id: "RQL_CSVFormat", name: "RQL CSVFormat™ (Million-Row Sovereign CSV Sanitizer)", price: "$89", tier: "Lifetime Perpetual Commercial License (1 PC Node Hardware Lock)" },
       { id: "UNIVERSAL_MASTER", name: "RQL Sovereign Master Access (All-Suite Fleet Unlock)", price: "$999", tier: "Sovereign Master Fleet License (Universal Node Lock)" }
     ];
 
@@ -498,7 +522,7 @@
       const tierBadge = document.getElementById('tier_badge');
       const tierName = document.getElementById('tier_name');
 
-      if (idx === 11) {
+      if (idx === 15) {
         tierBadge.innerText = "[1 TIER MASTER FLEET]";
         tierBadge.style.color = "var(--gold)";
         tierBadge.style.background = "var(--gold-glow)";
